@@ -1,0 +1,58 @@
+body{
+font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+img {
+    border-radius: 15px;
+}
+
+
+.container-h {
+    display: flex; /* or inline-flex */
+    justify-content: space-between
+  }
+
+  nav ul.horizontal-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0; /* Remove default margin */
+  }
+
+  nav ul.horizontal-list li {
+    margin-right: 15px; /* Add some space between list items */
+  }
+  
+  
+  .container-m {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 280px; 
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 200px;
+  }
+
+
+.container-f {
+    display: flex; /* or inline-flex */
+    list-style: none;
+    justify-content: space-between
+  }
+
+  .footer-box {
+    background-color: #f2f2f2; /* Replace with your desired color */
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* Optional: round the corners */
+  }
