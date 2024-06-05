@@ -22,7 +22,7 @@ h1 {
 }
 
 h2{
-    color:blue
+    color:rgb(0, 0, 189)
 }
 
 p {color:antiquewhite}
@@ -48,6 +48,3 @@ button.style-button {
     font-size: 16px;
 }
 
-.item {
-    color: white;
-}
