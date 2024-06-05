@@ -1,11 +1,24 @@
 /* styles.css */
 body {
     background-color: rgb(0, 0, 0);
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    margin: 100px;
 }
+
+.container {
+    display: flex; /* or inline-flex */
+    justify-content: space-between
+  }
+
+.grid-test {
+     display: grid;
+     grid-template-columns: 50px 50px 50px 50px;
+}
+
 
 h1 {
     color: rgb(0, 0, 255);
+    font-size: 80px;
 }
 
 h2{
@@ -19,6 +32,22 @@ ul {color:antiquewhite}
 
 hr {
     border: none;            /* Remove the default border */
+    margin-right: 800px;
     height: 0;               /* Set height to 0 */
     border-top: 4px dotted rgb(0, 0, 255); /* Add a top border with dotted style */
+}
+
+button.style-button {
+    background-color: rgb(0, 0, 255);
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item {
+    color: white;
 }
