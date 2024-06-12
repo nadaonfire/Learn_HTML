@@ -59,35 +59,6 @@ function addTracksToPage(tracks) {
   container.appendChild(ul);
 }
 
-function addTracksToSmallPage(tracks) {
-  const ul = document.createElement("ul");
-
-  tracks.forEach((track) => {
-    console.log("track: ", track);
-    const li = document.createElement("li");
-    li.classList.add("list-item");
-
-    // Create a span that holds the album name
-    li.innerHTML = `
-      <div class="flex-container-tracks">
-        ${track.track.album.images[0]
-          ? `<img class="albumCoverImage" src="${track.track.album.images[0].url}"></img>`
-          : "<p>No Image available</p>"
-        }
-        <span class="album">
-          <h1> Album: ${track.track.album.name} </h1>
-        </span>
-        <p class="artistName">${track.track.name} by ${track.track.artists
-          .map((artist) => artist.name)
-          .join(", ")}</p>
-      </div>
-    `;
-    
-    ul.appendChild(li);
-  });
-  smallContainer.appendChild(ul);
-}
-
 function fetchAccessToken() {
   fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
